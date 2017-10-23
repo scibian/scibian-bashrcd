@@ -1,0 +1,13 @@
+Source: scibian-bashrcd
+Section: scibian
+Priority: extra
+Maintainer:  Scibian Packaging Team <packaging@scibian.org>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.0
+
+Package: scibian-bashrcd
+Architecture: all
+Depends: bash
+Description: system-wide bashrc conf directory for non-login shells
+ This package adds support for /etc/bash.bashrc.d
+ Please see https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=675008.

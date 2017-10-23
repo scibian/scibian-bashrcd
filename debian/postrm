@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+sed -e '/scibian-bashrcd:/,+9d' -i /etc/bash.bashrc
+
+#DEBHELPER#
+
+exit 0

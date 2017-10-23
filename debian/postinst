@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+if ! grep -sq "scibian-bashrcd" /etc/bash.bashrc ; then
+  # don't forget to edit postrm if you change the code snippet below
+cat << "EOF" >> /etc/bash.bashrc
+# scibian-bashrcd: source system-wide bash config for non-login shells
+if [ -d /etc/bash.bashrc.d ]; then
+  for i in /etc/bash.bashrc.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+EOF
+fi
+
+#DEBHELPER#
+
+exit 0
