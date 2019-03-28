@@ -1,5 +1,5 @@
-scibian-bashrcd (9.0) scibian9; urgency=medium
+scibian-bashrcd (10.0) scibian10; urgency=medium
 
   * Initial release
 
- -- Scibian Packaging Team <packaging@scibian.org>  Fri, 13 Oct 2017 14:45:29 +0200
+ -- Scibian Packaging Team <packaging@scibian.org>  Thu, 28 Mar 2019 11:46:14 +0100
